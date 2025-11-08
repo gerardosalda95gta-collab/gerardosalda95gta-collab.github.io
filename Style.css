@@ -1,0 +1,251 @@
+/* Paleta de Colores para "llamar la atención" */
+:root {
+    --color-principal: #007bff; /* Azul fuerte (Moderno) */
+    --color-secundario: #ffc107; /* Amarillo (Destacado) */
+    --color-fondo: #f8f9fa; /* Gris muy claro */
+    --color-contraste: #dc3545; /* Rojo (Alerta/Importante) */
+    --color-texto: #343a40;
+    --sombra-suave: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos Generales y Reseteo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    text-align: center; /* Centrado general de todo el texto */
+}
+
+/* Contenedor Principal */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+.header {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 40px 20px;
+    box-shadow: var(--sombra-suave);
+}
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Navegación (Responsive) */
+.navbar {
+    background-color: var(--color-texto);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Para que sea responsivo en móviles */
+}
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+.nav-list a:hover {
+    background-color: var(--color-contraste);
+}
+
+/* Secciones de Contenido */
+.content-section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: var(--sombra-suave);
+}
+.content-section h2 {
+    color: var(--color-contraste); /* Títulos en rojo */
+    font-size: 2em;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--color-secundario); /* Línea amarilla bajo el título */
+    margin-bottom: 25px;
+}
+.content-section h3 {
+    color: var(--color-principal);
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+.content-section p, .content-section ul {
+    text-align: center; /* Asegura el centrado del texto principal */
+    max-width: 90%;
+    margin: 15px auto;
+}
+.content-section ul {
+    list-style: none;
+    padding: 0;
+}
+.content-section ul li {
+    padding: 5px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+/* Estilos Específicos */
+.info-box {
+    background-color: #e9ecef;
+    border-left: 5px solid var(--color-principal);
+}
+.note {
+    font-style: italic;
+    color: var(--color-contraste);
+    font-weight: bold;
+}
+
+/* Sección Importancia (Grid Responsivo) */
+.advantage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 2 columnas en desktop, 1 en mobile */
+    gap: 20px;
+    margin-top: 20px;
+}
+.advantage-item {
+    background-color: #e2f0ff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--color-principal);
+}
+
+/* Sección Características */
+.feature-detail-box {
+    background-color: var(--color-fondo);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px auto;
+    border: 1px solid #ddd;
+    max-width: 80%;
+}
+.yellow-bg {
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-texto);
+}
+
+/* Diferencia Clave (Flexbox Responsivo) */
+.comparison-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+.comp-item {
+    width: 45%;
+    min-width: 280px; /* Asegura que no se deforme mucho en móvil */
+    padding: 20px;
+    border: 2px solid var(--color-contraste);
+    border-radius: 8px;
+    background-color: #fff0f3;
+}
+
+/* Tipos de Hosting (Grid de Tarjetas) */
+.hosting-type-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+.type-card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Alineación a la izquierda dentro de la tarjeta para facilitar la lectura de listas */
+}
+.shared-card { border-top: 5px solid green; background-color: #f1fff1; }
+.vps-card { border-top: 5px solid blue; background-color: #f1f8ff; }
+.dedicated-card { border-top: 5px solid var(--color-contraste); background-color: #fff0f3; }
+.cloud-card { border-top: 5px solid orange; background-color: #fff7e5; }
+.type-card h3 { text-align: center; color: var(--color-texto); }
+.pros { color: green; font-weight: bold; }
+.cons { color: var(--color-contraste); font-weight: bold; }
+
+/* Soluciones AWS (Grid) */
+.aws-solutions {
+    background-color: #e9ecef;
+    border-left: 5px solid var(--color-secundario);
+}
+.aws-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.aws-service-card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--sombra-suave);
+}
+.red-bg {
+    background-color: var(--color-contraste);
+    color: white;
+}
+.red-bg h3, .red-bg p {
+    color: white;
+}
+.steps {
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+.aws-callout {
+    color: var(--color-principal);
+    border: 2px dashed var(--color-principal);
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* Pie de Página */
+.footer {
+    background-color: var(--color-texto);
+    color: white;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+.footer a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    margin-left: 10px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query para Responsividad (Dispositivos Móviles) */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8em;
+    }
+    .nav-list a {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+    .comparison-grid, .advantage-grid, .hosting-type-grid, .aws-grid {
+        grid-template-columns: 1fr; /* Una columna para móviles */
+    }
+    .comp-item {
+        width: 100%;
+        min-width: auto;
+    }
+    .content-section p, .content-section ul {
+        max-width: 100%; /* Mejor uso del espacio en pantallas pequeñas */
+    }
+}
