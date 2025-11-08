@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 La Guía Definitiva de Alojamiento Web y AWS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header id="inicio" class="header">
+        <h1>🚀 ALOJAMIENTO WEB: TU PORTAL AL MUNDO DIGITAL</h1>
+        <p>Toda la información esencial sobre hosting y soluciones modernas de AWS.</p>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#que-es">¿Qué es?</a></li>
+            <li><a href="#importancia">Importancia</a></li>
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#tipos">Tipos de Hosting</a></li>
+            <li><a href="#aws-hosting">AWS</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        
+        <section id="que-es" class="content-section info-box">
+            <h2>❓ ¿En qué Consiste el Alojamiento Web?</h2>
+            <p>El alojamiento web es un servicio que **almacena sitios web o aplicaciones web** y los hace **fácilmente accesibles** desde diversos dispositivos (computadoras, móviles, tabletas). Los archivos (imágenes, código, texto) se guardan en ordenadores especiales llamados **servidores**.</p>
+            <p>El proveedor de alojamiento web **mantiene, configura y ejecuta** los servidores físicos que alquilas. También proporciona apoyo adicional como **seguridad, copias de seguridad y rendimiento**.</p>
+        </section>
+
+        <section id="importancia" class="content-section importance">
+            <h2>✅ ¿Por qué es Importante el Alojamiento Web?</h2>
+            <p>Alojar un sitio en un servidor interno es costoso y complejo. Los proveedores externos ofrecen ventajas cruciales:</p>
+            
+            <div class="advantage-grid">
+                <div class="advantage-item">
+                    <h3>Rendimiento</h3>
+                    <p>Invierten en tecnología de vanguardia (CPU, memoria) para servidores de alto rendimiento, asegurando que las páginas se **carguen rápidamente**.</p>
+                </div>
+                <div class="advantage-item">
+                    <h3>Fiabilidad</h3>
+                    <p>Evitas el estrés del mantenimiento. Realizan **actualizaciones periódicas** para mantener la seguridad, liberando tus recursos de TI.</p>
+                </div>
+                <div class="advantage-item">
+                    <h3>Soporte Técnico</h3>
+                    <p>Asistencia completa para solucionar problemas, optimización de **supervisión y análisis**, y **copia de seguridad/recuperación de datos**.</p>
+                </div>
+                <div class="advantage-item">
+                    <h3>Seguridad y Cumplimiento</h3>
+                    <p>Enfoque integral con medidas físicas, operativas y de software que satisfacen todos los **requisitos de cumplimiento**.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="caracteristicas" class="content-section features">
+            <h2>💡 ¿Cuáles son las Características del Alojamiento Web?</h2>
+            <p>El costo varía por el tamaño del sitio, visitantes diarios y tráfico pico.</p>
+
+            <div class="feature-detail-box">
+                <h3>Espacio en Disco (Almacenamiento)</h3>
+                <p>Necesario para correos, archivos web, imágenes y bases de datos. Un **espacio reducido afecta la experiencia del usuario**. Considera el crecimiento futuro.</p>
+            </div>
+            
+            <div class="feature-detail-box yellow-bg">
+                <h3>Ancho de Banda y Transferencia de Datos</h3>
+                <p><strong>Ancho de Banda:</strong> Cantidad de datos que puede transferir a la vez (como el **tamaño de una tubería**).</p>
+                <p><strong>Transferencia de Datos:</strong> Cantidad real de datos que transfiere en un periodo (como la **cantidad real de agua** que pasa).</p>
+            </div>
+            
+            <div class="feature-detail-box">
+                <h3>Cuentas de Correo Electrónico</h3>
+                <p>Vincula el correo con tu nombre de dominio (<code>yourname@example.com</code>). Tipos principales:</p>
+                <ul>
+                    <li><strong>POP3:</strong> Almacena correos en el servidor.</li>
+                    <li><strong>Reenvío de Correo:</strong> Redirige a otra dirección.</li>
+                    <li><strong>Alias:</strong> Múltiples nombres (<code>ventas@</code>) redirigidos a una sola bandeja.</li>
+                </ul>
+            </div>
+            
+            <div class="feature-detail-box">
+                <h3>Acceso FTP</h3>
+                <p>Facilita la **transferencia e intercambio de archivos** (documentos, imágenes) del sitio.</p>
+            </div>
+        </section>
+
+        <section class="content-section difference">
+            <h2>➡️ Alojamiento Web vs. Nombre de Dominio</h2>
+            <div class="comparison-grid">
+                <div class="comp-item">
+                    <h3>Alojamiento Web (Servidor)</h3>
+                    <p>Proporciona la **máquina en Internet** con una **dirección IP única**.</p>
+                </div>
+                <div class="comp-item">
+                    <h3>Nombre de Dominio (Dirección)</h3>
+                    <p>Proporciona la **dirección fácil de recordar** (ej: <code>aws.amazon.com</code>). El DNS asigna el nombre a la IP.</p>
+                </div>
+            </div>
+            <p class="note">⚠️ Para que el sitio sea accesible, necesitas **ambos** y vincularlos.</p>
+        </section>
+
+        <section id="tipos" class="content-section types">
+            <h2>⚙️ Tipos de Servicios de Alojamiento Web</h2>
+            <p>Al crear una cuenta, el proveedor asigna **espacio y recursos** (RAM, CPU, ancho de banda). El plan es como alquilar un espacio de oficina:</p>
+
+            <div class="hosting-type-grid">
+                
+                <div class="type-card shared-card">
+                    <h3>1. 🤝 Alojamiento Compartido</h3>
+                    <p class="description">Acceso compartido al servidor. Se comparten recursos. **Cientos de sitios en el mismo servidor**.</p>
+                    <p class="ideal-for"><strong>Ideal para:</strong> Empresas nuevas, blogs personales.</p>
+                    <p class="pros">✅ Tarifas bajas, fácil configuración.</p>
+                    <p class="cons">❌ Rendimiento afectado por otros, menos control.</p>
+                </div>
+
+                <div class="type-card vps-card">
+                    <h3>2. 🛡️ Servidor Privado Virtual (VPS)</h3>
+                    <p class="description">El servidor físico se particiona virtualmente. Acceso **exclusivo** a recursos de cómputo.</p>
+                    <p class="ideal-for"><strong>Ideal para:</strong> Empresas medianas con tráfico creciente, sitios complejos.</p>
+                    <p class="pros">✅ Control total sobre configuración, fácil escalado, mayor control del rendimiento.</p>
+                    <p class="cons">❌ Requiere experticia técnica.</p>
+                </div>
+                
+                <div class="type-card dedicated-card">
+                    <h3>3. 🏰 Alojamiento Dedicado</h3>
+                    <p class="description">Acceso **exclusivo** al **servidor físico completo**. Máximo control y optimización.</p>
+                    <p class="ideal-for"><strong>Ideal para:</strong> Grandes empresas, negocios con múltiples dominios, apps complejas.</p>
+                    <p class="pros">✅ Máxima fiabilidad y seguridad, personalización completa.</p>
+                    <p class="cons">❌ Costoso, requiere capacidades técnicas internas.</p>
+                </div>
+
+                <div class="type-card cloud-card">
+                    <h3>4. ☁️ Alojamiento en la Nube</h3>
+                    <p class="description">Uso compartido de recursos y escalado. Archivos replicados en un **clúster de servidores**.</p>
+                    <p class="ideal-for"><strong>Ideal para:</strong> Todo tipo de empresas (PYMES, comercio electrónico).</p>
+                    <p class="pros">✅ Mayor disponibilidad/fiabilidad, **escalado automático**, pago por uso, alta seguridad.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section modern-req">
+            <h2>🌐 Requisitos del Alojamiento Web Moderno</h2>
+            <p>Las aplicaciones actuales deben:</p>
+            <ul>
+                <li>Ofrecer **la menor latencia** posible globalmente.</li>
+                <li>**Escalar** para satisfacer las cargas de trabajo más intensas y picos de tráfico.</li>
+                <li>Funcionar en **cientos de navegadores y dispositivos**.</li>
+                <li>Evitar la **administración de servidores físicos** (reducir TCO).</li>
+                <li>Aumentar la **agilidad** para innovar más rápido.</li>
+            </ul>
+        </section>
+        
+        <section id="aws-hosting" class="content-section aws-solutions">
+            <h2>⭐ Soluciones de Alojamiento Web en AWS</h2>
+            <p>AWS ofrece una gama de servicios que se adaptan a todos los requisitos empresariales, niveles de habilidad y presupuestos. Es posible alojar sitios con: instancias autoadministradas, VPS semiadministrado o arquitectura sin servidor.</p>
+            
+            <div class="aws-grid">
+                
+                <div class="aws-service-card yellow-bg">
+                    <h3>Control Total (Autoadministrado)</h3>
+                    <p><strong>Amazon EC2:</strong> Permite configurar y controlar completamente las instancias. **Mayor grado de control**, pero es complejo.</p>
+                    <p><strong>Amazon S3:</strong> Para **sitios web estáticos y simples** de bajo costo. Requiere habilitar HTTPS.</p>
+                </div>
+                
+                <div class="aws-service-card red-bg">
+                    <h3>VPS Semiadministrado</h3>
+                    <p><strong>Amazon Lightsail:</strong> La forma **más sencilla** de autoadministrar servidores VPS en AWS. Incluye instancias, contenedores, almacenamiento y bases de datos preconfiguradas (WordPress, Joomla, etc.).</p>
+                    <p class="steps"><strong>Ejemplo de Lightsail (5 min):</strong> Crear instancia → Conexión SSH y obtención de contraseña → Abrir <code>http://PublicIpAddress/wp-login.php</code>.</p>
+                </div>
+                
+                <div class="aws-service-card yellow-bg">
+                    <h3>Arquitectura Sin Servidor</h3>
+                    <p><strong>AWS Amplify Hosting:</strong> Implementa y aloja aplicaciones web de una sola página y sitios web estáticos **sin administrar recursos** (pago por uso y escalable).</p>
+                    <p class="steps"><strong>Ejemplo de Amplify:</strong> Iniciar sesión en consola → Crear aplicación (vincular a Git) → Verificar y Guardar.</p>
+                </div>
+            </div>
+            
+            <h3 class="aws-callout">AWS: Precios flexibles, escalabilidad desde el primer día y amplio soporte de la plataforma.</h3>
+            <p class="final-note">Para comenzar a utilizar el alojamiento web en AWS, **<a href="#">cree una cuenta hoy mismo</a>**.</p>
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Guía de Alojamiento Web. Toda la información suministrada.</p>
+        <a href="#inicio">Volver al inicio</a>
+    </footer>
+    
+</body>
+</html>
