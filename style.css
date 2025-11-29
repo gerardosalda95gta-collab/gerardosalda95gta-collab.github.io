@@ -1,0 +1,127 @@
+/*
+ * ESQUEMA DE COLOR: Verde Oscuro/Teal (#004d40) y Dorado/Ocre (#d0a33c)
+ */
+
+/* 1. Reset Básico y Tipografía */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Fondo suave */
+    color: #333;
+}
+
+/* 2. Diseño del Contenedor Principal (Responsivo y centrado) */
+main {
+    max-width: 900px;
+    width: 90%;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+/* 3. Estilos de Títulos */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #004d40; /* Color de marca */
+    border-bottom: 3px solid #d0a33c; /* Línea de acento */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    color: #004d40;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.fecha-autor {
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* 4. Estilos de la IMAGEN (img) */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%; /* Totalmente responsivo */
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+img:hover {
+    transform: scale(1.01); /* Pequeño zoom al pasar el mouse */
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #888;
+    text-align: right;
+    padding-right: 5px;
+    margin-bottom: 30px;
+}
+
+/* 5. Estilos de AUDIO y VIDEO (audio, video) */
+.audio-container, .video-container {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    /* Destaca los elementos multimedia */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+}
+
+/* Estilo para la descripción de ACCESIBILIDAD (Punto 6) */
+.audio-container p strong, .video-container p strong {
+    display: block; 
+    color: #d0a33c; /* Color de acento para destacar la accesibilidad */
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+video {
+    width: 100%; /* Responsivo */
+    max-height: 500px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* 6. Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #004d40;
+    color: white;
+    margin-top: 30px;
+    border-radius: 0 0 8px 8px; /* Continua la forma del main */
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer mark {
+    background-color: #d0a33c;
+    color: #004d40;
+    padding: 2px 5px;
+    border-radius: 3px;
+}

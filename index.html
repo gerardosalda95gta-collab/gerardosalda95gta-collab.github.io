@@ -3,57 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posicionamiento Web Estratégico - Gerardo Saldaña Román</title>
+    <title>Noticia: Tren Maya - Tramo Inaugural</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    </head>
+</head>
 <body>
 
-    <header>
-        <h1>Guía de Posicionamiento Web Estratégico</h1>
-        <p>Aprende los conceptos clave para dominar la visibilidad en línea.</p>
-    </header>
-
     <main>
-        <section id="capsulas-conceptos">
-            <h2>Conceptos Esenciales de Visibilidad</h2>
+        <header>
+            <h1>El Tren Maya Abre sus Primeros Tramos: Impacto Social y Ecológico</h1>
+            <p class="fecha-autor">Por: Redacción Nacional | 28 de Noviembre de 2025</p>
+        </header>
 
-            <div class="capsula" onclick="mostrarInfo('seo')">
-                <h3>¿Qué es el SEO?</h3>
-                <p>un conjunto de técnicas para mejorar la visibilidad de un sitio web en los resultados orgánicos (no pagados) de los motores de búsqueda como Google. El objetivo es atraer tráfico de calidad y posicionar la web lo más alto posible en los resultados para que los usuarios la encuentren fácilment</p>
-				<img src="https://gscreativas.com/blog/wp-content/uploads/2021/05/tendencias-seo-2020.jpg" alt="Descripción de la imagen">
+        <section id="imagen-noticia">
+            <figure>
+                <img src="img/tren_maya_frente.jpg" 
+                     alt="Tren Maya moderno y de color turquesa, avanzando sobre una vía elevada en medio de la selva de Yucatán.">
+                <figcaption>El nuevo Tren Maya en su recorrido inaugural. (Foto: Secretaría de Turismo)</figcaption>
+            </figure>
+        </section>
+
+        <section id="contenido-texto">
+            <h2>Un Hito Histórico y un Debate Abierto</h2>
+            <p>El día de hoy se inauguró el primer tramo del proyecto Tren Maya, un hito que marca una nueva era de conectividad y turismo en el sureste de México. Este tramo une Palenque con Cancún y se espera que dinamice la economía de la región. Sin embargo, su construcción ha estado marcada por intensos debates en torno a la ecología, especialmente el impacto en los sistemas de cenotes y la selva, así como la reubicación de comunidades indígenas.</p>
+        </section>
+
+        <section id="audio-entrevista">
+            <div class="audio-container">
+                <h3>Escucha la Declaración Oficial</h3>
+                <p><strong>Descripción del Audio:</strong> Breve declaración del Director General de Fonatur sobre las medidas de mitigación ambiental y sustentabilidad del proyecto.</p>
+                <audio controls>
+                    <source src="audio/declaracion_fonatur.mp3" type="audio/mp3">
+                    Tu navegador no soporta el elemento de audio. Por favor, descarga la declaración aquí.
+                </audio>
             </div>
+        </section>
+        
+        <section id="contenido-continuacion">
+            <p>El gobierno ha asegurado que las obras cumplen con los más altos estándares ambientales, aunque diversas organizaciones civiles han presentado amparos y estudios que cuestionan dichas afirmaciones. La coexistencia entre el desarrollo de infraestructura y la preservación del patrimonio natural sigue siendo el principal desafío del proyecto.</p>
+        </section>
 
-            <div class="capsula" onclick="mostrarInfo('sem')">
-                <h3>¿Qué es el SEM?</h3>
-                <p>es una estrategia de marketing digital que consiste en usar publicidad de pago para aumentar la visibilidad de un sitio web en los motores de búsqueda como Google, mediante anuncios que aparecen en los resultados de búsqueda.</p>
-				<img src=https://reportenoreste.com/wp-content/uploads/2020/01/SEO-y-SEO.jpg" alt="Descripción de la imagen">
+        <section id="video-documental">
+            <div class="video-container">
+                <h3>Video Documental de la Ruta</h3>
+                <p><strong>Descripción del Video:</strong> Recorrido aéreo por los primeros kilómetros del tramo inaugurado, mostrando la infraestructura y el paisaje circundante.</p>
+                <video controls width="100%" poster="img/video_poster.jpg">
+                    <source src="video/recorrido_aereo.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
             </div>
         </section>
 
-        <section id="visibilidad">
-            <h2>Visibilidad en los Resultados de Búsqueda</h2>
-            <p>La visibilidad se refiere a qué tan fácil es para los usuarios encontrar tu sitio web cuando buscan palabras clave relevantes. Mejorar tu **SEO** y **SEM** te coloca en las primeras posiciones, incrementando el tráfico y las oportunidades de negocio.</p>
-            <ul>
-                <li>**Orgánica (SEO):** Resultados gratuitos y a largo plazo.</li>
-                <li>**Pagada (SEM):** Anuncios inmediatos con inversión.</li>
-                <li>**Clave del éxito:** Una estrategia que combine ambas.</li>
-            </ul>
-        </section>
     </main>
 
-    <div id="modal-info" class="modal">
-        <div class="modal-content">
-            <span class="cerrar-modal" onclick="ocultarInfo()">&times;</span>
-            <h3 id="modal-titulo"></h3>
-            <p id="modal-texto"></p>
-        </div>
-    </div>
-
     <footer>
-        <p>Desarrollado por: **Gerardo Saldaña Román**</p>
-        <p>&copy; 2025. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Noticias Mexicanas. Derechos Reservados.</p>
+        <p</p>
     </footer>
 
-    <script src="script.js"></script>
-    </body>
+</body>
 </html>
